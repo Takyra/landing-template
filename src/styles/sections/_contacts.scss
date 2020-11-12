@@ -1,0 +1,26 @@
+.contacts {
+
+    &__map {
+        height: 450px;
+    }
+
+    @media #{$laptop} {
+
+    }
+    
+    @media #{$laptopSmall} {
+        &__map {
+            height: 350px;
+        }
+    }
+    
+    @media #{$tablet} {
+
+    }
+    
+    @media #{$smartphone} {
+        &__map {
+            height: 250px;
+        }
+    }
+}

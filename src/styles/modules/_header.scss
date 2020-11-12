@@ -1,0 +1,58 @@
+.header {
+    position: relative;
+
+    &--hide {
+        position: fixed;
+        top: 0;
+        transform: translateY(-100%);
+        overflow: hidden;
+    }
+
+    &--fixed {
+        position: fixed;
+        top: 0;
+        background-color: transparentize(#273343, .1);
+        transition: transform .2s linear;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    &__menu {
+        display: none;
+        font-size: 0;
+
+        svg {
+            fill: #fff;
+        }
+    }
+
+    @media #{$laptop} {
+
+    }
+
+    @media #{$laptopSmall} {
+
+    }
+
+    @media #{$tablet} {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: transparentize(#000, .4);
+        width: 100%;
+        padding: 6px 0;
+
+        &__menu {
+            display: block;
+        }
+    }
+
+    @media #{$smartphone} {
+
+    }
+}

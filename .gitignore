@@ -1,0 +1,12 @@
+/app
+/dist
+/layout
+/layouts
+/node_modules
+/package-lock.json
+/psd
+/src/css
+/src/js
+/src/libs
+/template
+/templates

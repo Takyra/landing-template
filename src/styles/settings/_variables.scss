@@ -1,0 +1,37 @@
+$fontName   : 'fontName';
+$fontFolder : '../fonts';
+
+// Font weight
+$thin       : 100;
+$hairline   : 100;
+$extraLight : 200;
+$ultraLight : 200;
+$light      : 300;
+$regular    : 400;
+$fw-medium  : 500;
+$semiBold   : 600;
+$demiBold   : 600;
+$bold       : 700;
+$extraBold  : 800;
+$ultraBold  : 800;
+$fw-black   : 900;
+$fw-heavy   : 900;
+
+// Media queries
+$device          : 'screen';
+$laptop          : '#{$device} and (max-width: 1366px)';
+$laptopHard      : '#{$device} and (max-width: 1366px) and (min-width: 1191px)';
+$laptopSmall     : '#{$device} and (max-width: 1190px)';
+$laptopSmallHard : '#{$device} and (max-width: 1190px) and (min-width: 769px)';
+$tablet          : '#{$device} and (max-width: 768px)';
+$tabletHard      : '#{$device} and (max-width: 768px)  and (min-width: 481px)';
+$smartphone      : '#{$device} and (max-width: 480px)';
+$smartphoneHard  : '#{$device} and (max-width: 480px)  and (min-width: 320px)';
+$ie              : '(-ms-high-contrast: active), (-ms-high-contrast: none)';
+
+// Default
+$fontSize         : 16px;
+$textColor        : #000;
+$placeholderColor : #ccc;
+$primary          : #ff0000;
+$secondary        : seagreen;

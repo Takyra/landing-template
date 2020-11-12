@@ -1,0 +1,125 @@
+.bold {
+    font-weight: $bold;
+}
+
+.hide,
+.hidden,
+.none {
+    display: none !important;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1110px;
+    padding: 80px 20px;
+    margin: 0 auto;
+
+    @media #{$laptop} {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    @media #{$laptopSmall} {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    @media #{$tablet} {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    @media #{$smartphone} {
+        padding-right: 14px;
+        padding-left: 14px;
+    }
+}
+
+.slider-dots {
+    display: flex;
+    justify-content: center;
+    font-size: 0;
+
+    li {
+        display: flex;
+        align-items: center;
+        margin: 0 8px;
+
+        &.slick-active {
+            button {
+                background-color: #fff;
+                cursor: default;
+            }
+        }
+    }
+
+    button {
+        font-size: 0;
+        background-color: $primary;
+        width: 24px;
+        height: 6px;
+        transition: background-color .2s linear,
+                    width .2s linear,
+                    height .2s linear;
+    }
+
+    @media #{$tablet} {
+        button {
+            width: 14px;
+            height: 14px;
+        }
+    }
+}
+
+.slider-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+
+    &--prev {
+        left: 0;
+        // background-image: url('../images/ico/arrow-left.jpg');
+    }
+
+    &--next {
+        right: 0;
+        // background-image: url('../images/ico/arrow-right.jpg');
+    }
+}
+
+.scrollUp {
+    position: fixed;
+    bottom: 26px;
+    right: 28px;
+    width: 40px;
+    height: 40px;
+
+    &__arrow {
+        position: absolute;
+        top: 58%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 30px;
+        height: 30px;
+    }
+
+    &:hover {
+        .scrollUp__arrow--first {
+            animation: duble-arrow 2s linear infinite;
+        }
+
+        .scrollUp__arrow--last {
+            animation: duble-arrow 2s linear infinite -1s;
+        }
+    }
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .6);
+    width: 100vw;
+    height: 100vh;
+}

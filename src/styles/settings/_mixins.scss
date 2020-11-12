@@ -1,0 +1,35 @@
+@mixin font-face($weight: 'Regular', $number: $regular, $italic: false) {
+    $style: normal;
+
+    @if $italic {
+        $style: italic;
+    }
+
+    @font-face {
+        font-family: $fontName;
+        src: url('#{$fontFolder}/#{$fontName}/#{$fontName}-#{$weight}/#{$fontName}-#{$weight}.woff2') format('woff2'),
+             url('#{$fontFolder}/#{$fontName}/#{$fontName}-#{$weight}/#{$fontName}-#{$weight}.woff')  format('woff');
+        font-weight: $number;
+        font-style:  $style;
+    }
+}
+
+@mixin clearfix() {
+    &:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin bgi-center($path: false) {
+    @if $path != false {
+        background-image: url($path);
+    }
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+// transparentize($color, .3); = opacity: .7;

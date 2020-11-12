@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Landing — template</title>
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__wrapper wrapper">
+            <button type="button" aria-label="Открыть навигацию" class="header__menu">
+                <svg width="30" height="30">
+                    <use href="images/sprite.svg#menu"></use>
+                </svg>
+            </button>
+
+            <nav class="navigation header__navigation">
+                <button type="button" aria-label="Закрыть навигацию" class="navigation__close">
+                    <svg width="40" height="40">
+                        <use href="images/sprite.svg#close"></use>
+                    </svg>
+                </button>
+        
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="#up" class="scroll">Вверх</a></li>
+                    <li class="navigation__item"><a href="#about" class="scroll">О нас</a></li>
+                    <li class="navigation__item"><a href="#contacts" class="scroll">Контакты</a></li>
+                </ul>
+        
+                <div class="navigation__information">
+                    <div class="navigation__section">
+                        <div class="navigation__caption">Адрес:</div>
+                        <address>Адрес компании</address>
+                    </div>
+                    <div class="navigation__section">
+                        <div class="navigation__caption">Режим работы:</div>
+                        <div>График компании</div>
+                    </div>
+
+                    <button class="button navigation__button" data-popup-button="callback">Заказать звонок</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="about">
+            <div class="about__wrapper wrapper">
+
+            </div>
+        </section>
+
+        <section id="contacts" class="contacts">
+            <div class="contacts__wrapper wrapper">
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+
+    </footer>
+
+    <button type="button" class="scrollUp none" aria-label="Вверх">
+        <svg class="scrollUp__arrow scrollUp__arrow--first" width="40" height="40">
+            <use href="images/sprite.svg#arrow-up"></use>
+        </svg>
+        <svg class="scrollUp__arrow scrollUp__arrow--last" width="40" height="40">
+            <use href="images/sprite.svg#arrow-up"></use>
+        </svg>
+    </button>
+
+    <div class="popup" data-popup-window="callback">
+        <button type="button" class="popup__close" aria-label="Закрыть">
+            <svg width="40" height="40">
+                <use href="images/sprite.svg#close"></use>
+            </svg>
+        </button>
+
+        <div class="popup__wrapper">
+            <div class="popup__title title">Заказать звонок</div>
+
+            <form class="popup__form">
+                <div class="popup__item">
+                    <input type="text" name="name" placeholder="Ваше имя*" required>
+                </div>
+                <div class="popup__item">
+                    <input type="tel" name="phone" placeholder="Номер телефона*" required>
+                </div>
+                <div class="popup__item">
+                    <input type="email" name="email" placeholder="Введите email">
+                </div>
+                <div class="popup__item popup__item--small">
+                    <label class="checkbox">
+                        <input type="checkbox" required="required">
+                        <div class="checkbox__box"></div>
+                        <span>я согласен на обработку <a href="#" data-popup-button="consent">персональных данных</a></span>
+                    </label>
+                </div>
+                <div class="popup__item popup__item--small"><span class="popup__attention">*</span> - Поля обязательные к заполнению</div>
+                <button type="submit" class="button">Отправить</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="popup" data-popup-window="consent">
+        <button type="button" class="popup__close" aria-label="Закрыть">
+            <svg width="40" height="40">
+                <use href="images/sprite.svg#close"></use>
+            </svg>
+        </button>
+
+        <div class="popup__wrapper">
+            <p>Предоставляя свои персональные данные Покупатель даёт согласие на обработку, хранение и использование своих персональных данных на основании ФЗ № 152-ФЗ «О персональных данных» от 27.07.2006 г. в следующих  целях:</p>
+            <ul>
+                <li>Регистрации Пользователя на сайте</li>
+                <li>Осуществление клиентской поддержки</li>
+                <li>Получения Пользователем информации о маркетинговых событиях</li>
+                <li>Выполнение Продавцом обязательств перед Покупателем</li>
+                <li>Проведения аудита и прочих внутренних исследований с целью повышения качества предоставляемых услуг.
+                </li>
+            </ul>
+            <p>Под персональными данными подразумевается любая информация личного характера, позволяющая установить личность Покупателя такая как:</p>
+            <ul>
+                <li>Фамилия, Имя, Отчество</li>
+                <li>Дата рождения</li>
+                <li>Контактный телефон</li>
+                <li>Адрес электронной почты</li>
+                <li>Почтовый адрес</li>
+            </ul>
+            <p>Персональные данные Покупателей хранятся исключительно на электронных носителях и обрабатываются с использованием автоматизированных систем, за исключением случаев, когда не автоматизированная обработка персональных данных необходима в связи с исполнением требований законодательства. Продавец обязуется не передавать полученные персональные данные третьим лицам, за исключением следующих случаев:</p>
+            <p>По запросам уполномоченных органов государственной власти РФ только по основаниям и в порядке, установленным законодательством РФ</p>
+            <p>Стратегическим партнерам, которые работают с Продавцом для предоставления продуктов и услуг, или тем из них, которые помогают Продавцу реализовывать продукты и услуги потребителям. Мы предоставляем третьим лицам минимальный объем персональных данных, необходимый только для оказания требуемой услуги или проведения необходимой транзакции.</p>
+            <p>Продавец оставляет за собой право вносить изменения в одностороннем порядке в настоящие правила, при условии, что изменения не противоречат действующему законодательству РФ. Изменения условий настоящих правил вступают в силу после их публикации на Сайте.</p>
+        </div>
+    </div>
+
+    <div class="popup" data-popup-window="event">
+        <button type="button" class="popup__close" aria-label="Закрыть">
+            <svg width="40" height="40">
+                <use href="images/sprite.svg#close"></use>
+            </svg>
+        </button>
+
+        <div class="popup__wrapper">
+            <div class="popup__title title"></div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <script type="text/javascript" src="js/libs.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+</body>
+
+</html>

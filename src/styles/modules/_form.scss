@@ -1,0 +1,44 @@
+.form {
+
+}
+
+.checkbox {
+    position: relative;
+    display: block;
+
+    input {
+        position: absolute;
+        opacity: 0;
+        user-select: none;
+        pointer-events: none;
+
+        &:checked + .checkbox__box::before {
+            visibility: visible;
+        }
+    }
+
+    &__box {
+        position: relative;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        vertical-align: middle;
+        width: 16px;
+        height: 16px;
+        margin-right: 6px;
+        user-select: none;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 2px;
+            background-color: #ddd;
+            width: 10px;
+            height: 10px;
+            visibility: hidden;
+        }
+    }
+}

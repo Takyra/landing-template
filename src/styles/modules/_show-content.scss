@@ -1,0 +1,13 @@
+.target-animation {
+    position: relative;
+    opacity: 0;
+
+    &--found {
+        animation-duration: .3s;
+        animation-fill-mode: both;
+
+        &.class {
+            animation-name: tdStampInSwing;
+        }
+    }
+}

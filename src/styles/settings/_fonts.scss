@@ -1,0 +1,26 @@
+@include font-face('Thin', $thin);
+@include font-face('Thin', $thin, true);
+
+@include font-face('ExtraLight', $extraLight);
+@include font-face('ExtraLight', $extraLight, true);
+
+@include font-face('Light', $light);
+@include font-face('Light', $light, true);
+
+@include font-face('Regular', $regular);
+@include font-face('Regular', $regular, true);
+
+@include font-face('Medium', $fw-medium);
+@include font-face('Medium', $fw-medium, true);
+
+@include font-face('SemiBold', $semiBold);
+@include font-face('SemiBold', $semiBold, true);
+
+@include font-face('Bold', $bold);
+@include font-face('Bold', $bold, true);
+
+@include font-face('ExtraBold', $extraBold);
+@include font-face('ExtraBold', $extraBold, true);
+
+@include font-face('Black', $fw-black);
+@include font-face('Black', $fw-black, true);

@@ -1,0 +1,89 @@
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: $fontName, Tahoma, Arial, sans-serif;
+    font-size: $fontSize;
+    font-weight: $regular;
+    color: $textColor;
+    min-height: 100vh;
+}
+
+main {
+    flex-grow: 1;
+    overflow: hidden;
+
+    @media #{$ie} {
+        min-height: 100vh;
+    }
+}
+
+select,
+input,
+textarea {
+    width: 100%;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    color: inherit;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+::-webkit-input-placeholder {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    color: $placeholderColor;
+}
+
+::-moz-placeholder {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    color: $placeholderColor;
+}
+
+:-moz-placeholder {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    color: $placeholderColor;
+}
+
+:-ms-input-placeholder {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    color: $placeholderColor;
+}
+
+* {
+    -webkit-text-size-adjust: none;
+    box-sizing: border-box;
+}
+
+*,
+button,
+input,
+select,
+textarea {
+    :focus {
+        outline: none;
+    }
+}
