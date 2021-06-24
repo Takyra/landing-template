@@ -27,7 +27,7 @@ let path = {
             'src/libs/jquery/dist/jquery.js',
             'src/libs/slick-carousel/slick/slick.js',
             'src/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.js',
-            'src/libs/inputmask/dist/jquery.inputmask.bundle.js'
+            'src/libs/inputmask/dist/inputmask.min.js'
         ],
         css:      'src/css/',
         style:    'src/styles/style.scss',
