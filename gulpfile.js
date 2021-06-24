@@ -21,12 +21,12 @@ let path = {
         html: 'src/index.html',
         libsCss: [
             'src/libs/slick-carousel/slick/slick.css',
-            'src/libs/fancybox/dist/jquery.fancybox.css'
+            'src/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.css'
         ],
         libsJs: [
             'src/libs/jquery/dist/jquery.js',
             'src/libs/slick-carousel/slick/slick.js',
-            'src/libs/fancybox/dist/jquery.fancybox.js',
+            'src/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.js',
             'src/libs/inputmask/dist/jquery.inputmask.bundle.js'
         ],
         css:      'src/css/',

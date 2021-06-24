@@ -1,14 +1,17 @@
-@mixin font-face($weight: 'Regular', $number: $regular, $italic: false) {
+@mixin font-face($fontName, $weight: 'Regular', $number: $regular, $italic: false) {
     $style: normal;
 
     @if $italic {
         $style: italic;
+        $italic: 'Italic';
+    } @else {
+        $italic: '';
     }
 
     @font-face {
         font-family: $fontName;
-        src: url('#{$fontFolder}/#{$fontName}/#{$fontName}-#{$weight}/#{$fontName}-#{$weight}.woff2') format('woff2'),
-             url('#{$fontFolder}/#{$fontName}/#{$fontName}-#{$weight}/#{$fontName}-#{$weight}.woff')  format('woff');
+        src: url('#{$fontFolder}/#{$fontName}/#{$fontName}-#{$weight}#{$italic}/#{$fontName}-#{$weight}#{$italic}.woff2') format('woff2'),
+             url('#{$fontFolder}/#{$fontName}/#{$fontName}-#{$weight}#{$italic}/#{$fontName}-#{$weight}#{$italic}.woff')  format('woff');
         font-weight: $number;
         font-style:  $style;
     }

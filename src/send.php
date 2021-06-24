@@ -4,20 +4,20 @@
     $mail = new PHPMailer;
     $mail -> isSMTP();
 
-    $mail -> Host       = 'smtp.gmail.com';
+    $mail -> Host       = 'mtp.yandex.ru';
     $mail -> SMTPAuth   = true;
-    $mail -> Username   = 'SomeGenHome@gmail.com';
-    $mail -> Password   = 'utyf380625';
+    $mail -> Username   = 'email';
+    $mail -> Password   = 'password';
     $mail -> SMTPSecure = 'ssl';
     $mail -> Port       = 465;
     $mail -> CharSet    = 'UTF-8';
 
-    $mail -> setFrom('SomeGenHome@gmail.com', 'no-reply');
-    $mail -> addAddress('SomeGenHome@gmail.com', 'Обработка заявок');
+    $mail -> setFrom('from email', 'no-reply');
+    $mail -> addAddress('to email', 'Обработка заявок c сайта <Название сайта>');
     
     $mail -> isHTML(true);
 
-    $mail -> Subject = 'Запрос обратного звонка с сайта';
+    $mail -> Subject = 'Запрос обратного звонка.';
     $mail -> Body = '
         <html>
             <head>

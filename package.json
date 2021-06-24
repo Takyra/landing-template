@@ -1,6 +1,6 @@
 {
     "name": "landing",
-    "version": "2.1.0",
+    "version": "2.1.1",
     "description": "",
     "author": "Azarov G.G.",
     "license": "ISC",
@@ -25,6 +25,13 @@
         "gulp-sass": "^4.0.2",
         "gulp-tinypng": "^1.0.2",
         "gulp-uglify": "^3.0.0",
-        "gulp-watch": "^5.0.0"
+        "gulp-watch": "^5.0.0",
+        "yarn": "^1.22.10"
+    },
+    "dependencies": {
+        "@fancyapps/fancybox": "^3.5.7",
+        "inputmask": "^5.0.6",
+        "jquery": "^3.6.0",
+        "slick-carousel": "^1.8.1"
     }
 }
